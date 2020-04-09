@@ -1,12 +1,12 @@
 {
   "name": "@pouemes/fbtwvk",
-  "version": "v1.0.0",
-  "description": "mon package",
+  "version": "v1.0.1",
+  "description": "fbtwvk",
   "main": "fbtwvk.html",
-  "keywords": "pouemes",
+  "keywords": "fbtwvk",
   "author": {
     "name": "pouemes",
-    "url": "http://pouemes.free.fr"
+    "url": "http://love.poem.free.fr"
   },
   "repository": {
     "type": "git",
