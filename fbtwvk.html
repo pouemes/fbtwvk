@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Lightweight social script</title>
+<meta name="description" content="A simple and lightweight script for facebook, twitter and vk.">
+<meta name="keywords" content="lightweight,script,facebook,twitter,facebook">
+<link rel="canonical" href="https://github.com/pouemes/fbtwvk/blob/master/fbtwvk.html" />
+<meta property="og:image" content="https://github.com/pouemes/fbtwvk/blob/master/widgets.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="A simple and lightweight script for facebook, twitter and vk." />
+<style>
+.top {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 135px);
+	text-align:center;
+    line-height: 18px
+}
+.mail,.fb,.tw,.vk{
+	background:url(widgets.png);
+    display: inline-block;
+    cursor: pointer;
+    width: 65px;
+    height: 20px
+}
+
+.mail {
+    background-position: 0 0
+}
+
+.fb {
+    background-position: -69px 0
+}
+
+.tw {
+    background-position: -137px 0
+}
+
+.vk {
+    background-position: -206px 0
+}
+</style>
+</head>
+<body>
+<script>
+function op(t) {
+    var e, o = document.title,
+        n = t.getAttribute("data-n"),
+        r = document.querySelector("link[rel='canonical']").href,
+        i = document.querySelector("meta[name='keywords']").content;
+		- 1 !== n.indexOf("mailto") ? window.location.href = n + "&body=" + r : (e = -1 !== n.indexOf("fb") ? "https://www.facebook.com/sharer/sharer.php?u=" + r : -1 !== n.indexOf("vk") ? "https://vk.com/share.php?url=" + r + "&title=" + o : "https://twitter.com/intent/tweet?url=" + r + "&text=" + encodeURIComponent(o) + "&hashtags=" + i + "&via=poemes", window.open(e, "", "height=500,width=600,rel=nofollow"))
+}
+</script>
+
+<div class="top"><span data-n="mailto:?subject=fbtwvk" title="Partager" onclick="op(this);return false;" class="mail"></span>
+<span data-n="fb" title="Partage Facebook" onclick="op(this);return false;" class="fb"></span>
+<span data-n="tw" title="Partage Twitter" onclick="op(this);return false;" class="tw"></span>
+<span data-n="vk" title="Partage Vk" onclick="op(this);return false;" class="vk"></span>
+<div class="langue">Poème traduit en latin (439 langues)</div></div>
+</body>
+</html>

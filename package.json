@@ -1,0 +1,20 @@
+{
+  "name": "@pouemes/fbtwvk",
+  "version": "v1.0.0",
+  "description": "mon package",
+  "main": "fbtwvk.html",
+  "keywords": "pouemes",
+  "author": {
+    "name": "pouemes",
+    "url": "http://pouemes.free.fr"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pouemes/fbtwvk"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/pouemes",
+  "dependencies": {
+    "npm": "^6.14.2"
+  }
+}
